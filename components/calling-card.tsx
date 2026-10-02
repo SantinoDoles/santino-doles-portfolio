@@ -39,8 +39,8 @@ export function CallingCard() {
             <div className="student-label"><GraduationCap size={17} /><span>College student <span className="divider-dot">·</span> Multimedia Web Development</span></div>
             <div className="hero-actions">
               <Button size="lg" className="h-12 px-5" onClick={() => showPanel('projects')}>Explore my projects <ArrowUpRight data-icon="inline-end" /></Button>
-              <Button size="lg" variant="outline" className="h-12 px-5" onClick={() => showPanel('github')}><GitFork data-icon="inline-start" /> GitHub <ArrowUpRight data-icon="inline-end" /></Button>
-              <Button size="lg" variant="ghost" className="h-12 px-3" onClick={() => showPanel('email')}><Mail data-icon="inline-start" /> Email me</Button>
+              <a href="https://github.com/SantinoDoles" target="_blank" rel="noopener noreferrer" className={buttonVariants({ size: 'lg', variant: 'outline', className: 'h-12 px-5' })}><GitFork data-icon="inline-start" /> GitHub <ArrowUpRight data-icon="inline-end" /></a>
+              <a href="mailto:santinodoles@icloud.com" className={buttonVariants({ size: 'lg', variant: 'ghost', className: 'h-12 px-3' })}><Mail data-icon="inline-start" /> Email me</a>
             </div>
           </div>
           <ProfileCode />
