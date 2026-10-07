@@ -10,6 +10,7 @@ const skills = [
   { name: 'CSS', category: 'Design & responsiveness', icon: Palette, tag: '#' },
   { name: 'Python', category: 'Logic & problem solving', icon: Terminal, tag: 'py' },
   { name: 'SQL', category: 'Data & databases', icon: Database, tag: 'db' },
+  { name: 'Git / GitHub', category: 'Version control & collaboration', icon: GitFork, tag: 'git' },
 ]
 
 export function CallingCard() {
@@ -34,9 +35,9 @@ export function CallingCard() {
           <div className="hero-copy">
             <div className="eyebrow"><span className="eyebrow-line" /> HELLO WORLD, I&apos;M</div>
             <h1 id="hero-title">Santino Doles<span>.</span></h1>
-            <h2>Aspiring Web Developer<span className="headline-period">.</span></h2>
-            <p className="intro">A curious mind with a passion for technology, programming, and turning ideas into creative digital experiences.</p>
-            <div className="student-label"><GraduationCap size={17} /><span>College student <span className="divider-dot">·</span> Multimedia Web Development</span></div>
+            <h2>Aspiring Software Developer<span className="headline-period">.</span></h2>
+            <p className="intro">College student building practical projects with Python, web technologies, SQL, and modern development tools. Focused on learning by building and growing toward a career in software development.</p>
+            <div className="student-label"><GraduationCap size={17} /><span>College student <span className="divider-dot">·</span> Software Development Focus</span></div>
             <div className="hero-actions">
               <Button size="lg" className="h-12 px-5" onClick={() => showPanel('projects')}>Explore my projects <ArrowUpRight data-icon="inline-end" /></Button>
               <a href="https://github.com/SantinoDoles" target="_blank" rel="noopener noreferrer" className={buttonVariants({ size: 'lg', variant: 'outline', className: 'h-12 px-5' })}><GitFork data-icon="inline-start" /> GitHub <ArrowUpRight data-icon="inline-end" /></a>
@@ -56,7 +57,57 @@ export function CallingCard() {
         <section className="connect-section" id="connect"><div className="connect-icon"><Braces size={24} /></div><div><h2>Good things start with a conversation.</h2><p>Have an idea, an opportunity, or just want to say hello?</p></div><Button variant="outline" className="h-11 px-5" onClick={() => showPanel('email')}>Let&apos;s connect <ArrowRight data-icon="inline-end" /></Button></section>
 
         <section id="details" aria-live="polite" className={panel ? 'details-panel' : 'details-anchor'}>
-          {panel && <><div className="detail-heading"><span className="eyebrow">{panel === 'projects' ? 'PROJECT NOTEBOOK' : 'LET’S CONNECT'}</span><Button variant="ghost" size="icon" aria-label="Close details" onClick={() => setPanel(null)}><X /></Button></div>{panel === 'projects' ? <><h2>My first digital introduction.</h2><p>You&apos;re looking at my personal calling card: a responsive home for my skills, interests, and development journey. More creative projects will be added here as I build and learn.</p><a href="#about" className={buttonVariants({ variant: 'link' })}>Back to the introduction <ArrowUpRight data-icon="inline-end" /></a></> : <><h2>{panel === 'github' ? 'Find my code on GitHub.' : 'Let’s build a connection.'}</h2><p>{panel === 'github' ? 'My GitHub profile link hasn’t been added yet. Check back soon to explore my code and follow what I’m building.' : 'My email address hasn’t been added yet. Contact details will be available here soon.'}</p></>}</>}
+          {panel && <><div className="detail-heading"><span className="eyebrow">{panel === 'projects' ? 'PROJECT NOTEBOOK' : 'LET’S CONNECT'}</span><Button variant="ghost" size="icon" aria-label="Close details" onClick={() => setPanel(null)}><X /></Button></div>{panel === 'projects' ? <><h2>Projects I'm building.</h2><p>Featured projects that show what I’m learning, building, and improving as I grow into software development.</p>
+          <article className="project-card">
+  <h3>Word Bluff</h3>
+
+  <p>
+    A multiplayer word game built as a hands-on software development
+    project. I worked with modern web technologies, GitHub, Cloudflare,
+    and a database while learning how a real application is built and deployed.
+  </p>
+
+  <div className="project-tech">
+    <span>React</span>
+    <span>TypeScript</span>
+    <span>Cloudflare</span>
+    <span>D1 Database</span>
+  </div>
+
+  <a
+    href="https://github.com/SantinoDoles/word-bluff"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View on GitHub <ArrowUpRight size={14} />
+  </a>
+</article>
+
+<article className="project-card">
+  <h3>Developer Portfolio</h3>
+
+  <p>
+    A personal portfolio site built to showcase my skills, projects, and growth
+    as an aspiring software developer. I customized the design, updated the
+    content, and used GitHub and modern web development tools to manage and
+    publish the project.
+  </p>
+
+  <div className="project-tech">
+    <span>Next.js</span>
+    <span>React</span>
+    <span>TypeScript</span>
+    <span>GitHub</span>
+  </div>
+
+  <a
+    href="https://github.com/SantinoDoles/santino-doles-portfolio"
+    target="_blank"
+    rel="noopener noreferrer"
+  >
+    View on GitHub <ArrowUpRight size={14} />
+  </a>
+</article><a href="#about" className={buttonVariants({ variant: 'link' })}>Back to the introduction <ArrowUpRight data-icon="inline-end" /></a></> : <><h2>{panel === 'github' ? 'Find my code on GitHub.' : 'Let’s build a connection.'}</h2><p>{panel === 'github' ? 'Explore my GitHub to see the projects I’m building, the code I’m learning from, and how my development skills are growing.' : 'Have a project, opportunity, or question? Feel free to reach out by email.'}</p></>}</>}
         </section>
       </main>
       <footer className="site-footer"><span>© {new Date().getFullYear()} Santino Doles</span><span className="footer-note">Made with curiosity <span>+</span> a little code.</span><a href="#about">Back to top <ArrowUpRight size={13} /></a></footer>

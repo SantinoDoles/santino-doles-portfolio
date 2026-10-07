@@ -70,3 +70,41 @@
 @media (max-width: 1050px) { .site-shell { padding: 0 35px; }.hero { gap: 25px; }.hero-actions { gap: 7px; flex-wrap: wrap; }.hero h1 { font-size: 48px; }.code-content { font-size: 8.5px; }.student-label { font-size: 9px; }.skill { padding: 18px 15px; }.skill p { font-size: 9px; }.skill-number { display: none; } }
 @media (max-width: 760px) { .site-shell { padding: 0 24px; }.site-header { height: 79px; }.site-header nav { padding-left: 0; gap: 22px; }.header-contact { display: none; }.hero { grid-template-columns: 1fr; padding-top: 52px; padding-bottom: 81px; gap: 49px; }.hero h1 { font-size: clamp(42px, 9vw, 65px); letter-spacing: -2.7px; }.hero h2 { font-size: 25px; }.intro { font-size: 14px; max-width: 460px; }.student-label { font-size: 10px; }.hero-actions { gap: 9px; }.hero-actions [data-slot='button'] { font-size: 11px; }.profile-visual { max-width: 460px; width: 100%; margin: 0 auto; }.code-content { font-size: clamp(8px, 2.5vw, 11px); }.visual-grid { inset: -20px -15px; }.hero-index { font-size: 7px; }.section-heading { align-items: flex-start; }.section-heading h2 { font-size: 22px; max-width: 260px; line-height: 1.3; }.section-heading > p { display: none; }.skills-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }.skill { padding: 20px; }.skill p { font-size: 10px; }.connect-section { flex-wrap: wrap; gap: 14px; margin-top: 22px; padding: 23px 0 32px; }.connect-section > div:nth-child(2) { flex: 1; }.connect-section h2 { font-size: 13px; line-height: 1.5; }.connect-section p { line-height: 1.7; }.connect-section > button { margin-left: 59px; }.site-footer { flex-wrap: wrap; row-gap: 15px; }.footer-note { order: 3; width: 100%; }.discover-link { font-size: 9px; } }
 @media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } *, *::before, *::after { animation: none !important; transition: none !important; } }
+.project-card {
+  margin-top: 1.5rem;
+  padding: 1.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.03);
+}
+
+.project-card h3 {
+  margin-bottom: 0.75rem;
+  font-size: 1.35rem;
+}
+
+.project-card p {
+  margin-bottom: 1rem;
+  line-height: 1.7;
+}
+
+.project-tech {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin: 1rem 0;
+}
+
+.project-tech span {
+  padding: 0.4rem 0.75rem;
+  border: 1px solid rgba(255, 255, 255, 0.12);
+  border-radius: 999px;
+  font-size: 0.85rem;
+}
+
+.project-card a {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  margin-top: 0.5rem;
+}

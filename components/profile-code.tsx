@@ -15,10 +15,10 @@ export function ProfileCode() {
           <div><span className="line-number">01</span><span className="code-comment">{'// A little about me'}</span></div>
           <div><span className="line-number">02</span><span><b>const</b> developer <b>=</b> {'{'}</span></div>
           <div><span className="line-number">03</span><span>&nbsp; name: <em>&apos;Santino Doles&apos;</em>,</span></div>
-          <div><span className="line-number">04</span><span>&nbsp; role: <em>&apos;Student & Developer&apos;</em>,</span></div>
-          <div><span className="line-number">05</span><span>&nbsp; studying: <em>&apos;Multimedia Web Dev&apos;</em>,</span></div>
+          <div><span className="line-number">04</span><span>&nbsp; role: <em>&apos;Aspiring Software Developer&apos;</em>,</span></div>
+          <div><span className="line-number">05</span><span>&nbsp; studying: <em>&apos;Python, SQL, & Web Development&apos;</em>,</span></div>
           <div><span className="line-number">06</span><span>&nbsp; interests: {'['}</span></div>
-          <div><span className="line-number">07</span><span>&nbsp;&nbsp;&nbsp; <em>&apos;Technology&apos;</em>, <em>&apos;Creative coding&apos;</em></span></div>
+          <div><span className="line-number">07</span><span>&nbsp;&nbsp;&nbsp; <em>&apos;Software Development&apos;</em>, <em>&apos;Problem Solving&apos;</em></span></div>
           <div><span className="line-number">08</span><span>&nbsp; {'],'}</span></div>
           <div><span className="line-number">09</span><span>&nbsp; alwaysLearning: <b>true</b></span></div>
           <div><span className="line-number">10</span><span>{'};'}</span></div>
