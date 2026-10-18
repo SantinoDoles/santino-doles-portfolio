@@ -29,7 +29,6 @@ export function CallingCard() {
         <nav aria-label="Main navigation"><a href="#about">About</a><a href="#skills">Skills</a><a href="#details" onClick={() => setPanel('projects')}>Projects</a></nav>
         <a className="header-contact" href="#connect">Let&apos;s connect <ArrowUpRight size={15} /></a>
       </header>
-
       <main id="main">
         <section className="hero" id="about" aria-labelledby="hero-title">
           <div className="hero-copy">
@@ -107,7 +106,31 @@ export function CallingCard() {
   >
     View on GitHub <ArrowUpRight size={14} />
   </a>
-</article><a href="#about" className={buttonVariants({ variant: 'link' })}>Back to the introduction <ArrowUpRight data-icon="inline-end" /></a></> : <><h2>{panel === 'github' ? 'Find my code on GitHub.' : 'Let’s build a connection.'}</h2><p>{panel === 'github' ? 'Explore my GitHub to see the projects I’m building, the code I’m learning from, and how my development skills are growing.' : 'Have a project, opportunity, or question? Feel free to reach out by email.'}</p></>}</>}
+</article>
+<article className="project-card">
+  <h3>Python Expense Tracker</h3>
+  <p>
+  A Python command-line application that helps users manage
+  monthly income, track expenses, and monitor their budget.
+  Built using Python fundamentals, functions, loops,
+  error handling, and file management.
+</p>
+<div className="project-tech">
+  <span>Python</span>
+  <span>File Handling</span>
+  <span>Git</span>
+  <span>GitHub</span>
+</div>
+<a
+  href="https://github.com/SantinoDoles/python-expense-tracker"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View on GitHub <ArrowUpRight size={14} />
+</a>
+</article>
+
+<a href="#about" className={buttonVariants({ variant: 'link' })}>Back to the introduction <ArrowUpRight data-icon="inline-end" /></a></> : <><h2>{panel === 'github' ? 'Find my code on GitHub.' : 'Let’s build a connection.'}</h2><p>{panel === 'github' ? 'Explore my GitHub to see the projects I’m building, the code I’m learning from, and how my development skills are growing.' : 'Have a project, opportunity, or question? Feel free to reach out by email.'}</p></>}</>}
         </section>
       </main>
       <footer className="site-footer"><span>© {new Date().getFullYear()} Santino Doles</span><span className="footer-note">Made with curiosity <span>+</span> a little code.</span><a href="#about">Back to top <ArrowUpRight size={13} /></a></footer>
