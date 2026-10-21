@@ -130,6 +130,33 @@ export function CallingCard() {
 </a>
 </article>
 
+<article className="project-card">
+  <h3>Python Battle Simulator</h3>
+
+<p>
+  A turn-based combat game built with Python where players battle
+  randomly selected enemies. Features attacking, defending, healing
+  potions, critical hits, and randomized enemy damage.
+</p>
+
+<div className="project-tech">
+  <span>Python</span>
+  <span>Game Logic</span>
+  <span>Random Module</span>
+  <span>Git</span>
+  <span>GitHub</span>
+</div>
+
+<a
+  href="https://github.com/SantinoDoles/python-battle-simulator"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View on GitHub <ArrowUpRight size={14} />
+</a>
+
+</article>
+
 <a href="#about" className={buttonVariants({ variant: 'link' })}>Back to the introduction <ArrowUpRight data-icon="inline-end" /></a></> : <><h2>{panel === 'github' ? 'Find my code on GitHub.' : 'Let’s build a connection.'}</h2><p>{panel === 'github' ? 'Explore my GitHub to see the projects I’m building, the code I’m learning from, and how my development skills are growing.' : 'Have a project, opportunity, or question? Feel free to reach out by email.'}</p></>}</>}
         </section>
       </main>
