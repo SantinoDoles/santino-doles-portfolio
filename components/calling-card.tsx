@@ -157,6 +157,30 @@ export function CallingCard() {
 
 </article>
 
+
+<article className="project-card">
+  <h3>AI Study Assistant</h3>
+  <p>
+  An AI-powered Python study assistant that explains programming
+  concepts, generates interactive quizzes, provides study tips,
+  and tracks quiz scores using the OpenAI API.
+</p>
+<div className="project-tech">
+  <span>Python</span>
+  <span>OpenAI API</span>
+  <span>AI Integration</span>
+  <span>Git</span>
+  <span>GitHub</span>
+</div>
+<a
+  href="https://github.com/SantinoDoles/ai-study-assistant"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  View on GitHub
+</a>
+</article>
+
 <a href="#about" className={buttonVariants({ variant: 'link' })}>Back to the introduction <ArrowUpRight data-icon="inline-end" /></a></> : <><h2>{panel === 'github' ? 'Find my code on GitHub.' : 'Let’s build a connection.'}</h2><p>{panel === 'github' ? 'Explore my GitHub to see the projects I’m building, the code I’m learning from, and how my development skills are growing.' : 'Have a project, opportunity, or question? Feel free to reach out by email.'}</p></>}</>}
         </section>
       </main>
